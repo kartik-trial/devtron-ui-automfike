@@ -37,7 +37,6 @@ affinity:
     values: {}
 image:
     pullPolicy: IfNotPresent
-restartPolicy: Always
 ambassadorMapping:
     enabled: false
     ambassadorId: ""
