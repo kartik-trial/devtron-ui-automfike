@@ -164,9 +164,6 @@ spec:
       securityContext:
 {{ toYaml .Values.podSecurityContext | indent 8 }}
 {{- end }}
-{{- if $.Values.restartPolicy }}
-      restartPolicy: {{  $.Values.restartPolicy }}
-{{- end }}
 {{- if $.Values.initContainers}}
       initContainers:
 {{- range $i, $c := .Values.initContainers }}
